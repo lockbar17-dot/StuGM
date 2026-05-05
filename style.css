@@ -16,7 +16,8 @@ body{
 }
 
 .wrap{
-    width: 420px;
+    min-width: 25%;
+    max-width: 420px;
     border: 2px solid rgba(255, 255, 255,.2);
     background: transparent;
     backdrop-filter: blur(5px);
@@ -53,26 +54,20 @@ body{
     color: #fff;
 }
 .button{
-display: flex;
-position: absolute;
-margin: 0 auto;
-align-items: center;
-justify-content: center;
-position: absolute;
-width: 200px;
-height: 45px;
-top: 50%;
-left: 50%; 
-transform: translateX(-50%); 
-border: none;
-width: 90%;         
-max-width: 300px;    
-height: 65px;
-
-
-
-color: white;
-cursor: pointer;
+    display: flex;
+    position: absolute;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 55%;
+    top: 50%;
+    left: 50%; 
+    transform: translateX(-50%); 
+    border: none;
+    height: 65px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 .glow-on-hover {
     width: 220px;
@@ -176,7 +171,7 @@ a, a:visited, a:hover, a:active {
     background-color: transparent;
     border: 6px solid rgb(0, 0, 0);
     border-radius: 30px;
-    color: #000;
+    color: #000000;
 }
 .slovo{
     display: flex;
@@ -228,23 +223,30 @@ a, a:visited, a:hover, a:active {
     bottom: 10%;
 }
 .search{
-    display: inline-flex;
+    
     justify-content: center;
     align-items: center;
     margin-left:50% ;
     transform: translateX(-50%);
     margin-top: 10px ;
+    max-width: 25%;
     
     
 }
+.search input::-webkit-search-cancel-button {
+    display: none;
+    -webkit-appearance: none;
+}
+
 .search input{
-    min-width: 50vh;
-    background-color: #fff;
+    width: 100%;
+    background-color: #ffffff;
     border-radius: 30px;
     border: 2px solid rgba(0,0,0);
     padding: 20px 45px 20px 20px;
     font-size: 16px;
     margin-bottom: 20px;
+    -webkit-appearance: none;
 }
 .search input::placeholder{
     color: #000;
